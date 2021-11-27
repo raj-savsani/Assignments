@@ -1,0 +1,602 @@
+[
+  {
+    "movie_name": "I Married a Monster from Outer Space",
+    "movie_genre": "Horror|Sci-Fi",
+    "production_year": 1997,
+    "budget": 16070.78
+  },
+  {
+    "movie_name": "Penthouse North",
+    "movie_genre": "Drama|Mystery|Thriller",
+    "production_year": 2009,
+    "budget": 18561.68
+  },
+  {
+    "movie_name": "Affair in Trinidad",
+    "movie_genre": "Drama|Film-Noir|Musical|Thriller",
+    "production_year": 2009,
+    "budget": 17811.65
+  },
+  {
+    "movie_name": "Blackthorn",
+    "movie_genre": "Western",
+    "production_year": 2000,
+    "budget": 15300.11
+  },
+  {
+    "movie_name": "Powaqqatsi",
+    "movie_genre": "Documentary",
+    "production_year": 2006,
+    "budget": 10857.73
+  },
+  {
+    "movie_name": "Violets Are Blue...",
+    "movie_genre": "Drama|Romance",
+    "production_year": 1995,
+    "budget": 9017.80
+  },
+  {
+    "movie_name": "Incredibly True Adventure of Two Girls in Love, The",
+    "movie_genre": "Comedy|Romance",
+    "production_year": 2000,
+    "budget": 11129.85
+  },
+  {
+    "movie_name": "Where in the World Is Osama Bin Laden?",
+    "movie_genre": "Documentary",
+    "production_year": 2001,
+    "budget": 13756.23
+  },
+  {
+    "movie_name": "Distant Thunder (Ashani Sanket)",
+    "movie_genre": "Drama",
+    "production_year": 1998,
+    "budget": 11087.69
+  },
+  {
+    "movie_name": "Beer Wars",
+    "movie_genre": "Documentary",
+    "production_year": 2012,
+    "budget": 12063.67
+  },
+  {
+    "movie_name": "Fire of Conscience (For lung)",
+    "movie_genre": "Action|Crime|Mystery|Thriller",
+    "production_year": 2004,
+    "budget": 17167.64
+  },
+  {
+    "movie_name": "Cure",
+    "movie_genre": "Crime|Horror|Thriller",
+    "production_year": 2006,
+    "budget": 18020.54
+  },
+  {
+    "movie_name": "General's Daughter, The",
+    "movie_genre": "Crime|Drama|Mystery|Thriller",
+    "production_year": 2006,
+    "budget": 15036.94
+  },
+  {
+    "movie_name": "Naughty Girl",
+    "movie_genre": "Comedy|Musical|Romance",
+    "production_year": 1974,
+    "budget": 10045.03
+  },
+  {
+    "movie_name": "Perfect Crime, The (Crimen Ferpecto) (Ferpect Crime)",
+    "movie_genre": "Comedy|Crime|Thriller",
+    "production_year": 1995,
+    "budget": 10614.26
+  },
+  {
+    "movie_name": "We Are Young. We Are Strong.",
+    "movie_genre": "Drama",
+    "production_year": 1996,
+    "budget": 16671.31
+  },
+  {
+    "movie_name": "Seizure",
+    "movie_genre": "Horror",
+    "production_year": 1993,
+    "budget": 15233.32
+  },
+  {
+    "movie_name": "Letter from an Unknown Woman",
+    "movie_genre": "Drama|Romance",
+    "production_year": 1997,
+    "budget": 12209.26
+  },
+  {
+    "movie_name": "Repast (Meshi)",
+    "movie_genre": "Drama",
+    "production_year": 2012,
+    "budget": 15722.38
+  },
+  {
+    "movie_name": "Shall We Kiss? (Un baiser s'il vous plait)",
+    "movie_genre": "Comedy|Romance",
+    "production_year": 2005,
+    "budget": 17891.17
+  },
+  {
+    "movie_name": "Thrill of Brazil, The",
+    "movie_genre": "Musical",
+    "production_year": 2004,
+    "budget": 19003.21
+  },
+  {
+    "movie_name": "Experts, The",
+    "movie_genre": "Comedy",
+    "production_year": 2005,
+    "budget": 14904.95
+  },
+  {
+    "movie_name": "Kolmistaan",
+    "movie_genre": "Drama|Romance",
+    "production_year": 1997,
+    "budget": 18744.18
+  },
+  {
+    "movie_name": "Thieves by Law (Ganavim Ba Hok)",
+    "movie_genre": "Documentary",
+    "production_year": 1994,
+    "budget": 16662.27
+  },
+  {
+    "movie_name": "My Dinner with André",
+    "movie_genre": "Drama",
+    "production_year": 1997,
+    "budget": 17383.11
+  },
+  {
+    "movie_name": "Rusalochka (The Little Mermaid)",
+    "movie_genre": "Children|Fantasy|Musical|Romance",
+    "production_year": 2009,
+    "budget": 14005.61
+  },
+  {
+    "movie_name": "Hair",
+    "movie_genre": "Comedy|Drama|Musical",
+    "production_year": 2011,
+    "budget": 18902.29
+  },
+  {
+    "movie_name": "Winning Streak",
+    "movie_genre": "Drama",
+    "production_year": 2010,
+    "budget": 19425.51
+  },
+  {
+    "movie_name": "Dirty Pictures",
+    "movie_genre": "Drama",
+    "production_year": 2007,
+    "budget": 11102.85
+  },
+  {
+    "movie_name": "Siegfried & Roy: The Magic Box",
+    "movie_genre": "Documentary|IMAX",
+    "production_year": 2010,
+    "budget": 10887.26
+  },
+  {
+    "movie_name": "Cooking with Stella",
+    "movie_genre": "Drama",
+    "production_year": 1992,
+    "budget": 14390.93
+  },
+  {
+    "movie_name": "Empire of Silver (Bai yin di guo)",
+    "movie_genre": "Drama|Romance",
+    "production_year": 2001,
+    "budget": 15365.16
+  },
+  {
+    "movie_name": "Circle, The (Dayereh)",
+    "movie_genre": "Drama",
+    "production_year": 2006,
+    "budget": 15774.76
+  },
+  {
+    "movie_name": "Lonely Place to Die, A",
+    "movie_genre": "Adventure|Crime|Thriller",
+    "production_year": 2009,
+    "budget": 16007.84
+  },
+  {
+    "movie_name": "Heavy Petting",
+    "movie_genre": "Documentary",
+    "production_year": 2011,
+    "budget": 13900.80
+  },
+  {
+    "movie_name": "Buffet froid",
+    "movie_genre": "Comedy|Crime",
+    "production_year": 2003,
+    "budget": 10329.31
+  },
+  {
+    "movie_name": "Moonraker",
+    "movie_genre": "Action|Adventure|Sci-Fi|Thriller",
+    "production_year": 2011,
+    "budget": 9517.27
+  },
+  {
+    "movie_name": "B.T.K.",
+    "movie_genre": "Crime|Drama|Horror|Mystery|Thriller",
+    "production_year": 2004,
+    "budget": 14735.52
+  },
+  {
+    "movie_name": "Tentacles (Tentacoli)",
+    "movie_genre": "Horror|Sci-Fi|Thriller",
+    "production_year": 2011,
+    "budget": 15370.33
+  },
+  {
+    "movie_name": "Streets of Blood",
+    "movie_genre": "Action|Thriller",
+    "production_year": 1989,
+    "budget": 13360.88
+  },
+  {
+    "movie_name": "Jalla! Jalla!",
+    "movie_genre": "Comedy|Drama|Romance",
+    "production_year": 2001,
+    "budget": 16543.88
+  },
+  {
+    "movie_name": "Kisses for My President",
+    "movie_genre": "Comedy",
+    "production_year": 1997,
+    "budget": 9895.60
+  },
+  {
+    "movie_name": "Missing in Action 2: The Beginning",
+    "movie_genre": "Action|War",
+    "production_year": 2010,
+    "budget": 13342.72
+  },
+  {
+    "movie_name": "And Nobody Weeps for Me (Und keiner weint mir nach)",
+    "movie_genre": "Drama|Romance",
+    "production_year": 1995,
+    "budget": 17630.89
+  },
+  {
+    "movie_name": "Jean-Michel Basquiat: The Radiant Child",
+    "movie_genre": "Documentary",
+    "production_year": 2012,
+    "budget": 11724.87
+  },
+  {
+    "movie_name": "Cameraman's Revenge, The (Mest kinematograficheskogo operatora)",
+    "movie_genre": "Animation|Comedy",
+    "production_year": 2006,
+    "budget": 9790.90
+  },
+  {
+    "movie_name": "Big Momma's House 2",
+    "movie_genre": "Action|Comedy|Crime",
+    "production_year": 1993,
+    "budget": 12514.90
+  },
+  {
+    "movie_name": "What A Man",
+    "movie_genre": "Comedy|Romance",
+    "production_year": 1992,
+    "budget": 17502.62
+  },
+  {
+    "movie_name": "Life Without Dick",
+    "movie_genre": "Comedy|Crime|Romance",
+    "production_year": 2008,
+    "budget": 19607.23
+  },
+  {
+    "movie_name": "Rasputin and the Empress",
+    "movie_genre": "Drama",
+    "production_year": 2006,
+    "budget": 13369.07
+  },
+  {
+    "movie_name": "Jailbait",
+    "movie_genre": "Crime|Drama|Thriller",
+    "production_year": 1967,
+    "budget": 13200.15
+  },
+  {
+    "movie_name": "Election (Hak se wui)",
+    "movie_genre": "Crime|Drama|Thriller",
+    "production_year": 2005,
+    "budget": 16181.91
+  },
+  {
+    "movie_name": "3 Holiday Tails (Golden Christmas 2: The Second Tail, A)",
+    "movie_genre": "Children|Comedy|Romance",
+    "production_year": 2011,
+    "budget": 13936.48
+  },
+  {
+    "movie_name": "Sansho the Bailiff (Sanshô dayû)",
+    "movie_genre": "Drama",
+    "production_year": 2003,
+    "budget": 10202.47
+  },
+  {
+    "movie_name": "Classe Tous Risques (Big Risk, The)",
+    "movie_genre": "Crime|Drama|Film-Noir|Romance|Thriller",
+    "production_year": 1994,
+    "budget": 15897.17
+  },
+  {
+    "movie_name": "Kin-Dza-Dza!",
+    "movie_genre": "Comedy|Drama|Sci-Fi",
+    "production_year": 1997,
+    "budget": 9769.25
+  },
+  {
+    "movie_name": "Miracles",
+    "movie_genre": "Comedy",
+    "production_year": 2005,
+    "budget": 14994.58
+  },
+  {
+    "movie_name": "Kokowääh",
+    "movie_genre": "Comedy",
+    "production_year": 1996,
+    "budget": 13235.51
+  },
+  {
+    "movie_name": "13th Letter, The",
+    "movie_genre": "Film-Noir",
+    "production_year": 2010,
+    "budget": 14433.27
+  },
+  {
+    "movie_name": "Claymation Comedy of Horrors",
+    "movie_genre": "Animation",
+    "production_year": 2000,
+    "budget": 16341.46
+  },
+  {
+    "movie_name": "Rainy Dog (Gokudô kuroshakai)",
+    "movie_genre": "Crime|Drama",
+    "production_year": 2011,
+    "budget": 17345.22
+  },
+  {
+    "movie_name": "Stopped on Track",
+    "movie_genre": "Drama",
+    "production_year": 2008,
+    "budget": 13518.47
+  },
+  {
+    "movie_name": "Date with an Angel",
+    "movie_genre": "Comedy|Fantasy|Romance",
+    "production_year": 2003,
+    "budget": 12065.79
+  },
+  {
+    "movie_name": "Jack the Giant Killer",
+    "movie_genre": "Action|Fantasy",
+    "production_year": 1996,
+    "budget": 11646.08
+  },
+  {
+    "movie_name": "Disorder",
+    "movie_genre": "Documentary",
+    "production_year": 1997,
+    "budget": 16789.15
+  },
+  {
+    "movie_name": "Torn",
+    "movie_genre": "Drama",
+    "production_year": 1998,
+    "budget": 18681.95
+  },
+  {
+    "movie_name": "Scars of Dracula",
+    "movie_genre": "Horror",
+    "production_year": 1998,
+    "budget": 11201.16
+  },
+  {
+    "movie_name": "Deathstalker",
+    "movie_genre": "Action|Adventure|Fantasy",
+    "production_year": 1992,
+    "budget": 13571.06
+  },
+  {
+    "movie_name": "Squid and the Whale, The",
+    "movie_genre": "Comedy|Drama",
+    "production_year": 2009,
+    "budget": 17074.51
+  },
+  {
+    "movie_name": "Port of Flowers",
+    "movie_genre": "(no genres listed)",
+    "production_year": 2008,
+    "budget": 12265.85
+  },
+  {
+    "movie_name": "Until Death",
+    "movie_genre": "Action|Drama|Thriller",
+    "production_year": 2008,
+    "budget": 12914.44
+  },
+  {
+    "movie_name": "Gentlemen Broncos",
+    "movie_genre": "Comedy",
+    "production_year": 2008,
+    "budget": 19937.00
+  },
+  {
+    "movie_name": "Ludwig",
+    "movie_genre": "Drama",
+    "production_year": 1985,
+    "budget": 19790.25
+  },
+  {
+    "movie_name": "Strange Planet",
+    "movie_genre": "Comedy|Romance",
+    "production_year": 1997,
+    "budget": 17012.53
+  },
+  {
+    "movie_name": "Linsanity",
+    "movie_genre": "Documentary",
+    "production_year": 1996,
+    "budget": 13997.66
+  },
+  {
+    "movie_name": "Recollections of the Yellow House (Recordações da Casa Amarela)",
+    "movie_genre": "Comedy|Drama",
+    "production_year": 1993,
+    "budget": 11312.26
+  },
+  {
+    "movie_name": "Flight of Dragons, The",
+    "movie_genre": "Adventure|Animation|Children|Drama|Fantasy",
+    "production_year": 1997,
+    "budget": 17928.19
+  },
+  {
+    "movie_name": "Love and Other Disasters",
+    "movie_genre": "Comedy|Romance",
+    "production_year": 1998,
+    "budget": 9159.57
+  },
+  {
+    "movie_name": "Prime Suspect 2",
+    "movie_genre": "Crime|Drama|Mystery|Romance|Thriller",
+    "production_year": 1988,
+    "budget": 15290.33
+  },
+  {
+    "movie_name": "Hairspray",
+    "movie_genre": "Comedy|Drama",
+    "production_year": 1996,
+    "budget": 17383.07
+  },
+  {
+    "movie_name": "Ronde, La",
+    "movie_genre": "Drama",
+    "production_year": 1996,
+    "budget": 16831.56
+  },
+  {
+    "movie_name": "Killing Words (Palabras encadenadas)",
+    "movie_genre": "Crime|Drama|Thriller",
+    "production_year": 2010,
+    "budget": 11087.11
+  },
+  {
+    "movie_name": "Taqwacore: The Birth of Punk Islam",
+    "movie_genre": "Documentary",
+    "production_year": 1994,
+    "budget": 15605.28
+  },
+  {
+    "movie_name": "Dracula",
+    "movie_genre": "Horror",
+    "production_year": 1998,
+    "budget": 17228.70
+  },
+  {
+    "movie_name": "Batman: The Dark Knight Returns, Part 2",
+    "movie_genre": "Action|Animation",
+    "production_year": 2001,
+    "budget": 17218.31
+  },
+  {
+    "movie_name": "Black Friday",
+    "movie_genre": "Crime|Drama|Horror|Sci-Fi",
+    "production_year": 2003,
+    "budget": 9836.12
+  },
+  {
+    "movie_name": "It Happened at the World's Fair",
+    "movie_genre": "Comedy|Drama|Musical",
+    "production_year": 1986,
+    "budget": 18860.97
+  },
+  {
+    "movie_name": "Lumiere and Company (Lumière et compagnie)",
+    "movie_genre": "Documentary",
+    "production_year": 2013,
+    "budget": 12837.00
+  },
+  {
+    "movie_name": "The Face of Marble",
+    "movie_genre": "Horror",
+    "production_year": 2008,
+    "budget": 16753.80
+  },
+  {
+    "movie_name": "Sweet Hereafter, The",
+    "movie_genre": "Drama",
+    "production_year": 2010,
+    "budget": 12913.14
+  },
+  {
+    "movie_name": "Blood of Heroes, The (Salute of the Jugger, The)",
+    "movie_genre": "Action|Sci-Fi",
+    "production_year": 2005,
+    "budget": 15240.90
+  },
+  {
+    "movie_name": "Something to Talk About",
+    "movie_genre": "Comedy|Drama|Romance",
+    "production_year": 1965,
+    "budget": 12889.73
+  },
+  {
+    "movie_name": "Marihuana",
+    "movie_genre": "Documentary|Drama",
+    "production_year": 1999,
+    "budget": 16219.70
+  },
+  {
+    "movie_name": "Head Over Heels",
+    "movie_genre": "Comedy|Romance",
+    "production_year": 1994,
+    "budget": 19035.63
+  },
+  {
+    "movie_name": "Last Castle, The",
+    "movie_genre": "Action",
+    "production_year": 2008,
+    "budget": 9058.56
+  },
+  {
+    "movie_name": "Pocahontas",
+    "movie_genre": "Animation|Children|Drama|Musical|Romance",
+    "production_year": 1993,
+    "budget": 12514.13
+  },
+  {
+    "movie_name": "C.H.U.D. II - Bud the Chud",
+    "movie_genre": "Comedy|Horror",
+    "production_year": 1996,
+    "budget": 14532.55
+  },
+  {
+    "movie_name": "Is Anybody There?",
+    "movie_genre": "Drama",
+    "production_year": 2005,
+    "budget": 11697.50
+  },
+  {
+    "movie_name": "Rain People, The",
+    "movie_genre": "Drama",
+    "production_year": 2004,
+    "budget": 19863.21
+  },
+  {
+    "movie_name": "Linotype: The Film",
+    "movie_genre": "Documentary",
+    "production_year": 2008,
+    "budget": 19347.83
+  }
+]
