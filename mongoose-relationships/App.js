@@ -79,6 +79,16 @@ app.post("/author", async (req, res) => {
     }
 });
 
+app.post("/section", async (req, res) => {
+    try {
+        const section = await Section.create(req.body);
+
+        return res.status(201).send(section);
+    } catch (e) {
+        return res.status(500).send({ message: e.message });
+    }
+});
+
 app.get("/author", async (req, res) => {
     try {
         const author = await Author.find().lean().exec();
@@ -105,6 +115,16 @@ app.post("/book", async (req, res) => {
         const book = await Book.create(req.body);
 
         return res.status(201).send(book);
+    } catch (e) {
+        return res.status(500).send({ message: e.message });
+    }
+});
+
+app.get("/books", async (req, res) => {
+    try {
+        const book = await Book.find().populate('author_id').populate('section_id').lean().exec();
+
+        return res.status(200).send(book);
     } catch (e) {
         return res.status(500).send({ message: e.message });
     }
