@@ -2,6 +2,6 @@ const mongoose = require("mongoose");
 
 module.exports = () => {
   return mongoose.connect(
-    "mongodb+srv://raj_savsani:raj22@cluster0.ybbtu.mongodb.net/fileuploads"
+    "mongodb://127.0.0.1:27017/fileuploads"
   );
 };
