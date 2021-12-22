@@ -1,0 +1,35 @@
+*{
+    margin: 0;padding: 0;
+}
+#root{
+    justify-content: center;
+    text-align: center;
+}
+.logodiv{
+    height: 50px;
+}
+.logodiv>img{
+    height: 100%;
+}
+.inputdiv{
+    padding:5px;
+    margin: 1%;
+}
+.inputdiv input{
+    margin: 1%;
+    padding:10px;
+    font-size:15px;
+}
+
+.inputdiv button{
+    margin: 1%;
+    padding:10px;
+    border-radius: 5px;
+    font-size:15px;
+}
+
+.task{
+    padding:5px;
+    margin: 5px;
+    color:chocolate
+}
