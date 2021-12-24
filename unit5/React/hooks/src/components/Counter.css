@@ -1,0 +1,10 @@
+div button {
+  margin: 1%;
+  font-size: 20px;
+  background-color: burlywood;
+  border-radius: 4px;
+}
+
+div button:hover {
+  background-color: aqua;
+}
