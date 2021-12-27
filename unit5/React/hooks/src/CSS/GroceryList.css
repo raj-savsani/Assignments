@@ -1,0 +1,11 @@
+.grocery button {
+  font-size: 15px;
+}
+.grocery {
+  margin: 10px auto;
+}
+
+.grocery input {
+  font-size: 15px;
+  outline: none;
+}

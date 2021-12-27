@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import("./Counter.css");
+import("../CSS/Counter.css");
 
 function Counter({ initial }) {
   const [count, setCount] = useState(initial);
@@ -15,7 +15,7 @@ function Counter({ initial }) {
   };
 
   return (
-    <div>
+    <div className="counter">
       <h1>Counter</h1>
       <h1>{count}</h1>
       <button onClick={() => chnageCount("+")}>Add 1</button>
