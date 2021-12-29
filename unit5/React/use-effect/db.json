@@ -1,0 +1,34 @@
+{
+  "todos": [
+    {
+      "title": "react",
+      "status": false,
+      "id": 1
+    },
+    {
+      "title": "html",
+      "status": false,
+      "id": 2
+    },
+    {
+      "title": "css",
+      "status": false,
+      "id": 3
+    },
+    {
+      "title": "get",
+      "status": false,
+      "id": 4
+    },
+    {
+      "title": "not",
+      "status": false,
+      "id": 5
+    },
+    {
+      "title": "mast chal raha ",
+      "status": false,
+      "id": 6
+    }
+  ]
+}

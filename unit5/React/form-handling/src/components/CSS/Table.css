@@ -1,0 +1,16 @@
+.table tr {
+  border: 2px solid rgb(161, 83, 51);
+}
+.table td {
+  border: 2px solid rgb(38, 114, 177);
+}
+.table {
+  border: 2px solid rgb(21, 57, 99);
+}
+
+.table-div {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

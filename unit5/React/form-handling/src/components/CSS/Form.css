@@ -1,0 +1,17 @@
+.form input {
+  font-size: 20px;
+  margin: 5px 5px;
+}
+
+.form label {
+  font-size: 20px;
+  margin: 5px;
+}
+.form select {
+  font-size: 20px;
+  margin: 5px;
+}
+
+#submit {
+  font-size: 25px;
+}
