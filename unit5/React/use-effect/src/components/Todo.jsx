@@ -4,13 +4,14 @@ import React, { useState, useEffect } from "react";
 function Todo() {
   const [text, setText] = useState("");
   const [todos, setTodos] = useState([]);
+  const [page, setPage] = useState(1);
 
   useEffect(() => {
     getTodo();
-  }, []);
+  }, [page]);
 
   const getTodo = () => {
-    fetch("http://localhost:3006/todos", {
+    fetch(`http://localhost:3006/todos?_page=${page}&_limit=3`, {
       method: "GET",
       headers: { "Content-Type": "application/json" },
     })
@@ -36,6 +37,8 @@ function Todo() {
     getTodo();
     setText("");
   };
+
+  
   return (
     <div>
       <input
@@ -49,6 +52,10 @@ function Todo() {
           <h3 key={todo.id}>{todo.title}</h3>
         ))}
       </div>
+      <button disabled={page === 1} onClick={() => setPage(page - 1)}>
+        prev
+      </button>
+      <button onClick={() => setPage(page + 1)}>next</button>
     </div>
   );
 }
