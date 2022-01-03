@@ -2,8 +2,7 @@ import React from "react";
 import TableBody from "./TableBody";
 import("./CSS/Table.css");
 
-function Table({ formdata }) {
-  console.log("formdata:", formdata);
+function Table({ data }) {
 
   return (
     <div className="table-div">
@@ -20,7 +19,7 @@ function Table({ formdata }) {
           </tr>
         </thead>
         <tbody>
-          <TableBody formdata={formdata} />
+          <TableBody data={data} />
         </tbody>
       </table>
     </div>

@@ -1,0 +1,74 @@
+{
+  "user-details": [
+    {
+      "name": "raj savsani",
+      "address": "nanadiya, nanadiya",
+      "age": "20",
+      "department": "frontend",
+      "salary": "15000",
+      "marital": "unmarried",
+      "photo": "C:\\fakepath\\Annotation 2021-11-30 161637.png",
+      "id": 1
+    },
+    {
+      "name": "yagnik savsani",
+      "address": "nanadiya, nanadiya",
+      "age": "21",
+      "department": "backend",
+      "salary": "20000",
+      "marital": "unmarried",
+      "photo": "C:\\fakepath\\Annotation 2021-11-30 161637.png",
+      "id": 2
+    },
+    {
+      "name": "chirag trivedi",
+      "address": "manavadar",
+      "age": "30",
+      "department": "Project manager",
+      "salary": "25000",
+      "marital": "married",
+      "photo": "C:\\fakepath\\Annotation 2021-12-02 155550.png",
+      "id": 3
+    },
+    {
+      "name": "nirav jarsaniya",
+      "address": "kesodh",
+      "age": "25",
+      "department": "devOps",
+      "salary": "30000",
+      "marital": "married",
+      "photo": "C:\\fakepath\\Annotation 2021-11-25 180802.png",
+      "id": 4
+    },
+    {
+      "name": "agravat bhautik",
+      "address": "bantwa",
+      "age": "27",
+      "department": "backend",
+      "salary": "27000",
+      "marital": "unmarried",
+      "photo": "C:\\fakepath\\Annotation 2021-11-18 164149.png",
+      "id": 5
+    },
+    {
+      "name": "shailendra singh",
+      "address": "indore",
+      "age": "20",
+      "department": "frontend",
+      "salary": "21000",
+      "marital": "unmarried",
+      "photo": "C:\\fakepath\\Annotation 2021-11-18 160036.png",
+      "id": 6
+    },
+    {
+      "name": "aditya neve",
+      "address": "jalgaon",
+      "age": "27",
+      "department": "Project manager",
+      "salary": "22000",
+      "marital": "unmarried",
+      "photo": "C:\\fakepath\\Annotation 2021-11-17 165920.png",
+      "id": 7
+    }
+  ]
+}

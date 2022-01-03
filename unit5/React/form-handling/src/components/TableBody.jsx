@@ -1,9 +1,10 @@
 import React from "react";
 
-function TableBody({ formdata }) {
+function TableBody({ data }) {
+  console.log('data:', data)
   return (
     <>
-      {formdata.map((person) => (
+      {data.map((person) => (
         <tr key={person.id}>
           <td>{person.name}</td>
           <td>{person.age}</td>

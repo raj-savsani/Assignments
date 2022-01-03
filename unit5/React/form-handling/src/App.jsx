@@ -3,14 +3,20 @@ import "./App.css";
 import Form from "./components/Form";
 import Table from "./components/Table";
 
-
 function App() {
-  const [formdata, setFromdata] = React.useState([]);
+  const [formdata, setFormdata] = React.useState([]);
+  const [data, setData] = React.useState([]);
+  
 
   return (
     <div className="App">
-      <Form formdata={formdata} setFromdata={setFromdata}/>
-      <Table formdata={formdata}/>
+      <Form
+        data={data}
+        setData={setData}
+        formdata={formdata}
+        setFormdata={setFormdata}
+      />
+      <Table data={data} />
     </div>
   );
 }

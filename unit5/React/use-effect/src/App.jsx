@@ -8,9 +8,10 @@ function App() {
   const [show, setShow] = useState(true);
   return (
     <div className="App">
-      <Timer intial={5} goTill={20}/>
+    
+      {/* <Timer intial={5} goTill={20}/> */}
       {/* {show ? <Timer /> : null} */}
-      {/* <Todo/> */}
+      <Todo/>
       {/* { show ? } */}
       {/* <button
         onClick={() => {
