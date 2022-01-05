@@ -23,7 +23,7 @@ function ProductsDetails() {
   return (
     <MainDiv>
       <div>
-        <img src={product.image} alt="image" />
+        <img src={product.image}  />
       </div>
       <div>
         <Title>{product.title}</Title>
