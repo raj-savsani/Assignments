@@ -1,13 +1,11 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import About from "./components/About";
-import Contact from "./components/Contact";
+import Dashboard from "./components/Dashboard";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import Navbar from "./components/Navbar";
-import PrivateRoute from "./components/PrivateRoute";
-import UserDetails from "./components/UserDetails";
-import Users from "./components/Users";
+import Settings from "./components/Settings";
+import PrivateRoute from "./Private/PrivateRoute";
 
 function App() {
   return (
@@ -15,26 +13,23 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/contact" element={<Contact />}></Route>
-        <Route
-          path="/users"
-          element={
-            <PrivateRoute>
-              <Users />
-            </PrivateRoute>
-          }
-        ></Route>
-        <Route
-          path="/users/:userid"
-          element={
-            <PrivateRoute>
-              <UserDetails />
-            </PrivateRoute>
-          }
-        ></Route>
         <Route path="/login" element={<Login />}></Route>
-        <Route path="*" element={<div> 404 no page found </div>}></Route>
+        <Route
+          path="/dashboard"
+          element={
+            <PrivateRoute>
+              <Dashboard />
+            </PrivateRoute>
+          }
+        ></Route>
+        <Route
+          path="/settings"
+          element={
+            <PrivateRoute>
+              <Settings />
+            </PrivateRoute>
+          }
+        ></Route>
       </Routes>
     </div>
   );
