@@ -16,16 +16,6 @@
       "id": 3
     },
     {
-      "title": "HTML",
-      "status": false,
-      "id": 4
-    },
-    {
-      "title": "CSS",
-      "status": false,
-      "id": 5
-    },
-    {
       "title": "MongoDB",
       "status": false,
       "id": 6
@@ -34,6 +24,11 @@
       "title": "express",
       "status": false,
       "id": 7
+    },
+    {
+      "title": "JavaScript",
+      "status": false,
+      "id": 8
     }
   ]
 }
