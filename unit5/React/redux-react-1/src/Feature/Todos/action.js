@@ -15,8 +15,6 @@ export const addTodo = (data) => {
   return { type: ADD_TODO, payload: data };
 };
 
-
-
 // add
 export const addTodoLoading = () => {
   return { type: ADD_TODO_LOADING };
@@ -28,7 +26,6 @@ export const addTodoSuccess = (data) => {
 export const addTodoError = (err) => {
   return { type: ADD_TODO_ERROR, payload: err };
 };
-
 
 // get
 export const getTodoLoading = () => {
@@ -42,6 +39,17 @@ export const getTodoError = (err) => {
   return { type: GET_TODO_ERROR, payload: err };
 };
 
+export const getData = () => (dispatch) => {
+  dispatch(getTodoLoading());
+  fetch("http://localhost:3006/todos")
+    .then((d) => d.json())
+    .then((data) => {
+      dispatch(getTodoSuccess(data));
+    })
+    .catch((e) => {
+      getTodoError(e);
+    });
+};
 
 // delete
 // export const deleteTodoLoading = () => {

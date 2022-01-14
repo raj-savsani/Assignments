@@ -7,9 +7,7 @@ import {
   addTodoError,
   addTodoLoading,
   addTodoSuccess,
-  getTodoError,
-  getTodoLoading,
-  getTodoSuccess,
+  getData,
 } from "../Feature/Todos/action";
 
 function Todo() {
@@ -34,15 +32,7 @@ function Todo() {
   }, []);
 
   async function getTodos() {
-    try {
-      dispatch(getTodoLoading());
-      const data = await fetch("http://localhost:3006/todos").then((d) =>
-        d.json()
-      );
-      dispatch(getTodoSuccess(data));
-    } catch (err) {
-      dispatch(getTodoError(err));
-    }
+    dispatch(getData());
   }
 
   const addTodo = () => {
