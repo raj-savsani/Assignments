@@ -1,5 +1,5 @@
 function spiralTravasal(mat, N, M) {
-    //storing element here
+  //storing element here
   let spiralOrder = [];
 
   let count = 0;
@@ -29,13 +29,12 @@ function spiralTravasal(mat, N, M) {
     }
     right--;
 
-     //traversing top side
+    //traversing top side
     for (let i = right; i >= left && count < N * M; i--) {
       spiralOrder.push(mat[top][i]);
       count++;
     }
     top++;
-
   }
   return spiralOrder;
 }
