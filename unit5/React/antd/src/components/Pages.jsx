@@ -1,7 +1,9 @@
 import React from "react";
 import { Pagination } from "antd";
+import InfiniteScroll from "./InfiniteScroll";
 
 function Pages() {
+  
   function onShowSizeChange(current, pageSize) {
     console.log(current, pageSize);
   }
@@ -19,6 +21,7 @@ function Pages() {
         defaultCurrent={3}
         total={500}
       />
+      <InfiniteScroll />
     </div>
   );
 }
