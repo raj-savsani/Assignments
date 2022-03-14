@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Input } from "antd";
 import { DatePicker, Space } from "antd";
 import { TimePicker } from "antd";
 import { Button } from "antd";
 import moment from "moment";
+import TodoContext from "../context/TodoContext";
 
 export function Todo() {
   const [task, setTask] = useState({ name: "", date: "", time: "" });
+  //   const [todos, setTodos] = useState([]);
 
   const handelChange = (e) => {
     const { name, value } = e.target;
@@ -14,43 +16,52 @@ export function Todo() {
   };
 
   const handelTimeChange = (a, timeString) => {
-    // console.log("a", a);
-    // console.log("time", timeString);
-
     setTask({ ...task, time: timeString });
   };
 
   function handelDateChange(date, dateString) {
-    // console.log(date, dateString);
     setTask({ ...task, date: dateString });
   }
 
-  console.log(task);
+  const { addTodo } = useContext(TodoContext);
+
+  const handelTodo = () => {
+    if (task.name !== "" && task.date !== "" && task.time !== "") {
+      addTodo(task);
+    } else if (task.date === "") {
+      alert("Please Enter Date");
+    } else if (task.time === "") {
+      alert("Please Enter time");
+    } else {
+      alert("Please Enter Task name");
+    }
+  };
+
 
   const format = "HH:mm";
 
   return (
-    <div>
-      {/* for taking task name */}
-      <Input
-        style={style.taskName}
-        placeholder="Enter Task name"
-        name="name"
-        value={task.name}
-        onChange={handelChange}
-      />
-      {/* for taking date */}
-      <DatePicker onChange={handelDateChange} />
-      {/* for taking time */}
-      <TimePicker
-        onChange={handelTimeChange}
-        defaultValue={moment("12:08", format)}
-        format={format}
-      />
-      {/* add task */}
+    <>
+      <h1> TODO APP </h1>
+      <div className="task">
+        <Input
+          style={style.taskName}
+          placeholder="Enter Task name"
+          name="name"
+          required
+          value={task.name}
+          onChange={handelChange}
+        />
 
-      <Button type="primary">Add Task</Button>
-    </div>
+        <DatePicker onChange={handelDateChange} />
+
+        <TimePicker onChange={handelTimeChange} format={format} />
+
+        <Button onClick={handelTodo} type="primary">
+          Add Task
+        </Button>
+      </div>
+    </>
   );
 }
 
