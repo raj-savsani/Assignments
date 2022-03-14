@@ -3,7 +3,7 @@ import TodoContext from "../context/TodoContext";
 import { Table, Tag, Space } from "antd";
 
 function ListTodos() {
-  const { todos } = useContext(TodoContext);
+  const { todos, handleToggle, deleteTodo } = useContext(TodoContext);
   console.log("todos:", todos);
 
   return (
@@ -14,6 +14,7 @@ function ListTodos() {
             <th>Task Name</th>
             <th>Date</th>
             <th>Time</th>
+            <th>Status</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -23,6 +24,10 @@ function ListTodos() {
               <td>{todo.name}</td>
               <td>{todo.date}</td>
               <td>{todo.time}</td>
+              <td onClick={() => handleToggle(todo.id, todo.status)}>
+                {todo.status ? "Completed" : "Not Completed"}
+              </td>
+              <td onClick={() => deleteTodo(todo.id)}>Delete</td>
             </tr>
           ))}
         </tbody>

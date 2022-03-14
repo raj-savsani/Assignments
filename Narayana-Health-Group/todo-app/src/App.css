@@ -33,7 +33,7 @@
   border: 1px solid;
 }
 .table > table > thead > tr > th:nth-child(1) {
-  width: 250px;
+  width: 350px;
 }
 .table > table > thead > tr > th:nth-child(2) {
   width: 150px;
@@ -42,5 +42,8 @@
   width: 150px;
 }
 .table > table > thead > tr > th:nth-child(4) {
-  width: 100px;
+  width: 150px;
+}
+.table > table > thead > tr > th:nth-child(5) {
+  width: 150px;
 }

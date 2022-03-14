@@ -19,9 +19,25 @@ export const TodoContextProvider = ({ children }) => {
     setCompletedTodos(() => completedtodos.filter((el) => el.id !== id));
   };
 
+  const handleToggle = (id, status) => {
+    if (!status) {
+      let completed = todos.filter((el) => el.id === id);
+      let inCompleted = todos.filter((el) => el.id !== completed.id);
+
+      setTodos(inCompleted);
+      setCompletedTodos([...completedtodos, completed]);
+    } else {
+      let inCompleted = completedtodos.filter((el) => el.id === id);
+      let completed = completedtodos.filter((el) => el.id !== inCompleted.id);
+
+      setTodos([...todos, inCompleted]);
+      setCompletedTodos(completed);
+    }
+  };
+
   return (
     <TodoContext.Provider
-      value={{ todos, addTodo, addToCompleted, deleteTodo }}
+      value={{ todos, addTodo, addToCompleted, deleteTodo, handleToggle }}
     >
       {children}
     </TodoContext.Provider>
