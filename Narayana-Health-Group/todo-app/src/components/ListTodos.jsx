@@ -3,8 +3,11 @@ import TodoContext from "../context/TodoContext";
 import { Table, Tag, Space } from "antd";
 
 function ListTodos() {
-  const { todos, handleToggle, deleteTodo } = useContext(TodoContext);
-  console.log("todos:", todos);
+  const { todos, completedtodos, handleToggle, deleteTodo } =
+    useContext(TodoContext);
+  /*
+
+    */
 
   return (
     <div className="table">
@@ -19,17 +22,40 @@ function ListTodos() {
           </tr>
         </thead>
         <tbody>
-          {todos.map((todo) => (
-            <tr key={todo.id}>
-              <td>{todo.name}</td>
-              <td>{todo.date}</td>
-              <td>{todo.time}</td>
-              <td onClick={() => handleToggle(todo.id, todo.status)}>
-                {todo.status ? "Completed" : "Not Completed"}
-              </td>
-              <td onClick={() => deleteTodo(todo.id)}>Delete</td>
-            </tr>
-          ))}
+        {todos.map((todo) => {
+            if (!todo.status) {
+              return (
+                <tr key={todo.id}>
+                  <td>{todo.name}</td>
+                  <td>{todo.date}</td>
+                  <td>{todo.time}</td>
+                  <td onClick={() => handleToggle(todo.id)}>
+                    {todo.status ? "Completed" : "Not Completed"}
+                  </td>
+                  <td onClick={() => deleteTodo(todo.id)}>Delete</td>
+                </tr>
+              );
+            }
+          })}
+          {todos.map((todo) => {
+            if (todo.status) {
+              return (
+                <tr key={todo.id}>
+                  <td>{todo.name}</td>
+                  <td>{todo.date}</td>
+                  <td>{todo.time}</td>
+                  <td onClick={() => handleToggle(todo.id)}>
+                    {todo.status ? "Completed" : "Not Completed"}
+                  </td>
+                  <td onClick={() => deleteTodo(todo.id)}>Delete</td>
+                </tr>
+              );
+            } else {
+              return null;
+            }
+          })}
+
+          
         </tbody>
       </table>
     </div>

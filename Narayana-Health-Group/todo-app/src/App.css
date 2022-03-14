@@ -33,7 +33,7 @@
   border: 1px solid;
 }
 .table > table > thead > tr > th:nth-child(1) {
-  width: 350px;
+  width: 300px;
 }
 .table > table > thead > tr > th:nth-child(2) {
   width: 150px;
