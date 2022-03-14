@@ -5,9 +5,15 @@ import { TimePicker } from "antd";
 import { Button } from "antd";
 import moment from "moment";
 import TodoContext from "../context/TodoContext";
+import { nanoid } from "nanoid";
 
 export function Todo() {
-  const [task, setTask] = useState({ name: "", date: "", time: "" });
+  const [task, setTask] = useState({
+    name: "",
+    date: "",
+    time: "",
+    status: false,
+  });
   //   const [todos, setTodos] = useState([]);
 
   const handelChange = (e) => {
@@ -27,7 +33,8 @@ export function Todo() {
 
   const handelTodo = () => {
     if (task.name !== "" && task.date !== "" && task.time !== "") {
-      addTodo(task);
+      let id = nanoid(6);
+      addTodo({ ...task, id: id });
     } else if (task.date === "") {
       alert("Please Enter Date");
     } else if (task.time === "") {
@@ -36,7 +43,6 @@ export function Todo() {
       alert("Please Enter Task name");
     }
   };
-
 
   const format = "HH:mm";
 
