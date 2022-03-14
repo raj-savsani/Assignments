@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import TodoContext from "../context/TodoContext";
-import { Table, Tag, Space } from "antd";
+
+import { Button } from "antd";
 
 function ListTodos() {
   const { todos, completedtodos, handleToggle, deleteTodo } =
@@ -22,17 +23,24 @@ function ListTodos() {
           </tr>
         </thead>
         <tbody>
-        {todos.map((todo) => {
+          {todos.map((todo) => {
             if (!todo.status) {
               return (
                 <tr key={todo.id}>
                   <td>{todo.name}</td>
                   <td>{todo.date}</td>
                   <td>{todo.time}</td>
-                  <td onClick={() => handleToggle(todo.id)}>
-                    {todo.status ? "Completed" : "Not Completed"}
+                  <td>
+                    <Button
+                      onClick={() => handleToggle(todo.id)}
+                      type="primary"
+                    >
+                      {todo.status ? "Completed" : "Not Completed"}
+                    </Button>
                   </td>
-                  <td onClick={() => deleteTodo(todo.id)}>Delete</td>
+                  <td><Button style={{ background: "#F44336" }} onClick={() => deleteTodo(todo.id)} type="primary">
+                      Delete
+                    </Button></td>
                 </tr>
               );
             }
@@ -44,18 +52,26 @@ function ListTodos() {
                   <td>{todo.name}</td>
                   <td>{todo.date}</td>
                   <td>{todo.time}</td>
-                  <td onClick={() => handleToggle(todo.id)}>
-                    {todo.status ? "Completed" : "Not Completed"}
+                  <td>
+                    <Button
+                      style={{ background: "#76FF03" }}
+                      onClick={() => handleToggle(todo.id)}
+                      type="primary"
+                    >
+                      {todo.status ? "Completed" : "Not Completed"}
+                    </Button>
                   </td>
-                  <td onClick={() => deleteTodo(todo.id)}>Delete</td>
+                  <td>
+                    <Button style={{ background: "#F44336" }} onClick={() => deleteTodo(todo.id)} type="primary">
+                      Delete
+                    </Button>
+                  </td>
                 </tr>
               );
             } else {
               return null;
             }
           })}
-
-          
         </tbody>
       </table>
     </div>
