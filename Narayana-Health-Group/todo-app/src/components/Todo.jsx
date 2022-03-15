@@ -36,12 +36,6 @@ export function Todo() {
     if (task.name !== "" && task.date !== "" && task.time !== "") {
       let id = nanoid(6);
       addTodo({ ...task, id: id });
-      setTask({
-        name: "",
-        date: "",
-        time: "",
-        status: false,
-      });
     } else if (task.date === "") {
       alert("Please Enter Date");
     } else if (task.time === "") {
@@ -62,7 +56,7 @@ export function Todo() {
           placeholder="Enter Task name"
           name="name"
           required
-          value={task.name.toUpperCase()}
+          value={task.name}
           onChange={handelChange}
         />
 
