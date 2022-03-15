@@ -1,21 +1,3 @@
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .App {
   text-align: center;
 }
@@ -46,4 +28,33 @@
 }
 .table > table > thead > tr > th:nth-child(5) {
   width: 150px;
+}
+.table > table > thead {
+  background-color: #ffd365;
+}
+.table > table > thead > tr > th {
+  font-size: 20px;
+}
+.notdone {
+  background-color: #b5fe83;
+}
+
+.done {
+  background-color: #EF5350;
+}
+.done > td {
+  text-decoration: line-through;
+}
+
+.table > table > tbody > tr > td {
+  border: 1px solid;
+  box-sizing: border-box;
+}
+
+.table > table > tbody > tr > td:nth-child(4) > button {
+  width: 100%;
+}
+
+.table > table > tbody > tr > td:nth-child(5) > button {
+  width: 100%;
 }

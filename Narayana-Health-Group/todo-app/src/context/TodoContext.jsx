@@ -29,6 +29,11 @@ export const TodoContextProvider = ({ children }) => {
     setTodos([...newtodos]);
   };
 
+  const clearCompleted = () => {
+    let taskLeft = todos.filter((el) => el.status === false);
+    setTodos([...taskLeft]);
+  };
+
   return (
     <TodoContext.Provider
       value={{
@@ -36,6 +41,7 @@ export const TodoContextProvider = ({ children }) => {
         addTodo,
         deleteTodo,
         handleToggle,
+        clearCompleted,
       }}
     >
       {children}

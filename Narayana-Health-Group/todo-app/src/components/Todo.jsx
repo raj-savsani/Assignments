@@ -14,12 +14,12 @@ export function Todo() {
     time: "",
     status: false,
   });
-  
+
   //   const [todos, setTodos] = useState([]);
 
   const handelChange = (e) => {
     const { name, value } = e.target;
-    setTask({ ...task, [name]: value });
+    setTask({ ...task, [name]: value.toUpperCase() });
   };
 
   const handelTimeChange = (a, timeString) => {
@@ -36,6 +36,12 @@ export function Todo() {
     if (task.name !== "" && task.date !== "" && task.time !== "") {
       let id = nanoid(6);
       addTodo({ ...task, id: id });
+      setTask({
+        name: "",
+        date: "",
+        time: "",
+        status: false,
+      });
     } else if (task.date === "") {
       alert("Please Enter Date");
     } else if (task.time === "") {
@@ -56,11 +62,16 @@ export function Todo() {
           placeholder="Enter Task name"
           name="name"
           required
-          value={task.name}
+          value={task.name.toUpperCase()}
           onChange={handelChange}
         />
 
-        <DatePicker onChange={handelDateChange} />
+        <DatePicker
+          disabledDate={(current) => {
+            return current && current < moment().subtract(1, "days");
+          }}
+          onChange={handelDateChange}
+        />
 
         <TimePicker onChange={handelTimeChange} format={format} />
 
