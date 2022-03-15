@@ -4,7 +4,7 @@ import TodoContext from "../context/TodoContext";
 import { Button } from "antd";
 
 function ListTodos() {
-  const { todos, completedtodos, handleToggle, deleteTodo,clearCompleted } =
+  const { todos, handleToggle, deleteTodo,clearCompleted } =
     useContext(TodoContext);
   /*
 
