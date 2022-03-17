@@ -1,0 +1,39 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid rgb(228, 221, 221);
+}
+
+.navbar > div {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
+.navbar > div:nth-child(1) {
+  width: 60%;
+}
+.navbar > div:nth-child(2) {
+  width: 20%;
+}
+.navbar > div > button {
+  font-size: 15px;
+  padding: 5px 15px;
+  border-radius: 15px;
+  background-color: #fff;
+  border: 1px solid gray;
+  font-weight: 500;
+}
+.navbar > div > button:nth-child(2) {
+  background-color: #000;
+  color: white;
+}
+.navbar > div > button:nth-child(2):hover {
+  background-color: #fff;
+  color: black;
+}
+.navbar > div > button:nth-child(1):hover {
+  background-color: #000;
+  color: white;
+}

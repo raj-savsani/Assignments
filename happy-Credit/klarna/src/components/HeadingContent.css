@@ -1,0 +1,11 @@
+.heading-content {
+  margin-top: 3%;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.heading-content > h1 {
+  font-size: 72px;
+  margin-bottom: 10px;
+}
