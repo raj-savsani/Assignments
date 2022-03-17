@@ -1,0 +1,12 @@
+.mainContainer {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 2%;
+  padding: 0 5%;
+}
+.mainContainer > div:nth-child(1) {
+  width: 25%;
+}
+.mainContainer > div:nth-child(2) {
+  width: 70%;
+}

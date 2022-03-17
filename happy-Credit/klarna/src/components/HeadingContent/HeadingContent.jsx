@@ -9,6 +9,7 @@ function HeadingContent() {
         The best online deals and coupons, including Klarna exclusives, updated
         daily.
       </p>
+      <p></p>
     </div>
   );
 }

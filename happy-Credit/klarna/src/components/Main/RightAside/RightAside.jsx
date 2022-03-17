@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function RightAside() {
-  return (
-    <div>RightAside</div>
-  )
+  return <div className="right-aside">RightAside</div>;
 }
 
-export default RightAside
+export default RightAside;
