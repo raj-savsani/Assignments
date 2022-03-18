@@ -5,16 +5,20 @@ function LeftAside() {
   return (
     <div className="left-aside">
       <div className="categories">
-        <h3>Categories</h3>
-        <p>Babies & Kids</p>
-        <p>Clothing & Apparel</p>
-        <p>Computers & Accessories</p>
-        <p>Consumer Electronics</p>
-        <p>Education</p>
-        <p>Gifts</p>
-        <p>Health & Beauty</p>
-        <p>Holidays & Occasions</p>
-        <p>Household</p>
+        <div>
+          <h3>Categories</h3>
+        </div>
+        <div>
+          <p>Babies & Kids</p>
+          <p>Clothing & Apparel</p>
+          <p>Computers & Accessories</p>
+          <p>Consumer Electronics</p>
+          <p>Education</p>
+          <p>Gifts</p>
+          <p>Health & Beauty</p>
+          <p>Holidays & Occasions</p>
+          <p>Household</p>
+        </div>
       </div>
       <hr />
       <div className="filter">
