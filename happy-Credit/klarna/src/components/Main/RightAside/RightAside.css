@@ -1,0 +1,29 @@
+.searchbar-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.searchbar-div > div > input {
+  padding: 0 20px;
+  width: 90%;
+  font-size: 20px;
+  outline: none;
+  border: none;
+}
+
+.img-div {
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-div > div {
+  margin: 1%;
+  width: 250px;
+  border-radius: 15px;
+}
+
+.img-div > div > img {
+  width: 100%;
+  border-radius: 15px;
+}
