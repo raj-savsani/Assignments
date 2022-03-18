@@ -49,6 +49,25 @@
 .none {
   display: none;
 }
+
+.menu {
+  position: fixed;
+  background-color: #fff;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  top: 70px;
+}
+
+.menu > div {
+  padding: 0 2%;
+}
+
+.menu > div > h2 {
+  padding: 2% 2%;
+  border-bottom: 1px solid rgb(221, 215, 215);
+}
+
 @media (max-width: 1000px) {
   .navbar h5 {
     display: none;
