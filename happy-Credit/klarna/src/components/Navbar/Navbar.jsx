@@ -3,6 +3,8 @@ import "./Navbar.css";
 
 function Navbar() {
   const [menu, setMenu] = useState(false);
+  const [value, setValue] = useState(10);
+  
   useEffect(() => {
     if (menu) {
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
