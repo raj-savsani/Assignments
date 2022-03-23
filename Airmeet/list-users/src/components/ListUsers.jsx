@@ -1,20 +1,37 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import axios from "axios";
 
 import { Button } from "antd";
+import { useDispatch, useSelector } from "react-redux";
+import { getUserError, getUserLoading, getUserSuccess } from "../Store/action";
 
 function ListUsers() {
- 
-  const [users, setUser] = useState([]);
+  const { loading, users, error } = useSelector((state) => ({
+    loading: state.loading,
+    users: state.users,
+    error: state.error,
+  }));
+
+  // const [users, setUser] = useState([]);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     getData();
-  });
+  }, []);
 
   const getData = async () => {
-    let { data } = await axios.get("https://listdatabase.herokuapp.com/user");
-    setUser(data);
+    dispatch(getUserLoading());
+    axios
+      .get("https://listdatabase.herokuapp.com/user")
+      .then((res) => {
+        console.log(res);
+        dispatch(getUserSuccess(res.data));
+      })
+      .catch((err) => {
+        dispatch(getUserError());
+      });
+    // setUser(data);
     // console.log(data);
   };
 
