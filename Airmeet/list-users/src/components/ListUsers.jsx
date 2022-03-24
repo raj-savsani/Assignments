@@ -10,6 +10,7 @@ import {
   getUserSuccess,
   setUser,
 } from "../Store/action";
+import { Link } from "react-router-dom";
 
 function ListUsers() {
   const { loading, users, error } = useSelector((state) => ({
@@ -36,13 +37,11 @@ function ListUsers() {
       .catch((err) => {
         dispatch(getUserError());
       });
-    // setUser(data);
-    // console.log(data);
   };
 
   const handelChange = (e) => {
     const { name, checked } = e.target;
-    // console.log('name, checked:', name, checked)
+
     let tempData = users.map((el) =>
       el._id === name ? { ...el, isChecked: checked } : el
     );
@@ -66,7 +65,6 @@ function ListUsers() {
     dispatch(setUser(updatedData));
     let Favourite = JSON.parse(localStorage.getItem("fav"));
     if (Favourite) {
-      console.log(Favourite);
       let newFav = [...Favourite, ...tempArr];
       localStorage.setItem("fav", JSON.stringify(newFav));
     } else {
@@ -75,52 +73,76 @@ function ListUsers() {
   };
 
   return (
-    <div>
-      <Button onClick={handelDelete} type="primary">
-        Delete Selected User
-      </Button>
-      <Button onClick={handelFavourite} type="primary">
-        Add To Favourite
-      </Button>
-      <div className="table">
-        <table>
-          <thead>
-            <tr>
-              <th>Select</th>
-              <th>First Name</th>
-              <th>Last Name</th>
-              <th>Email</th>
-            </tr>
-          </thead>
-          <tbody>
-            {users.length > 0 &&
-              users.map((user) => {
-                return (
-                  <tr
-                    style={
-                      user.isChecked ? { backgroundColor: "#9CCC65" } : null
-                    }
-                    key={user._id}
-                  >
-                    <td>
-                      <input
-                        type="checkbox"
-                        className="checkbox"
-                        name={user._id}
-                        checked={user.isChecked || false}
-                        onChange={handelChange}
-                      ></input>
-                    </td>
-                    <td>{user.first_name}</td>
-                    <td>{user.last_name}</td>
-                    <td>{user.email}</td>
-                  </tr>
-                );
-              })}
-          </tbody>
-        </table>
-      </div>
-    </div>
+    <>
+      {loading ? (
+        <h1> Loading... </h1>
+      ) : error ? (
+        <h1>Something went wrong...</h1>
+      ) : (
+        <div>
+          <Button
+            style={{ marginLeft: "10px", backgroundColor: "#F44336" }}
+            onClick={handelDelete}
+            type="primary"
+          >
+            Delete Selected User
+          </Button>
+          <Button
+            style={{ marginLeft: "10px" }}
+            onClick={handelFavourite}
+            type="primary"
+          >
+            Add To Favourite
+          </Button>
+          <Link to="/favourite">
+            <Button
+              style={{ marginLeft: "10px", backgroundColor: "#00E676" }}
+              type="primary"
+            >
+              Go To Favourite
+            </Button>
+          </Link>
+          <div className="table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Select</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                {users.length > 0 &&
+                  users.map((user) => {
+                    return (
+                      <tr
+                        style={
+                          user.isChecked ? { backgroundColor: "#9CCC65" } : null
+                        }
+                        key={user._id}
+                      >
+                        <td>
+                          <input
+                            type="checkbox"
+                            className="checkbox"
+                            name={user._id}
+                            checked={user.isChecked || false}
+                            onChange={handelChange}
+                          ></input>
+                        </td>
+                        <td>{user.first_name}</td>
+                        <td>{user.last_name}</td>
+                        <td>{user.email}</td>
+                      </tr>
+                    );
+                  })}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )}
+    </>
   );
 }
 
