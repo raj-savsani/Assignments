@@ -19,7 +19,7 @@ function ListUsers() {
     error: state.error,
   }));
 
-  // const [users, setUser] = useState([]);
+
   const dispatch = useDispatch();
 
   useEffect(() => {

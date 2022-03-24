@@ -1,5 +1,3 @@
-import axios from "axios";
-import { useEffect } from "react";
 import "antd/dist/antd.css";
 import "./App.css";
 import Favourite from "./components/Favourite";
