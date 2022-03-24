@@ -22,6 +22,7 @@ function ListUsers() {
   const dispatch = useDispatch();
 
   useEffect(() => {
+    localStorage.setItem("fav", "[]");
     getData();
   }, []);
 
@@ -49,18 +50,29 @@ function ListUsers() {
   };
 
   const handelDelete = () => {
-    // let tempArr = [];
-    // users.forEach((el) => {
-    //   if (el?.isChecked === true) {
-    //     tempArr.push(el._id);
-    //   }
-    // });
-
     let updatedData = users.filter((el) => (el?.isChecked ? false : true));
     dispatch(setUser(updatedData));
   };
 
-  const handelFavourite = () => {};
+  const handelFavourite = () => {
+    let tempArr = [];
+    users.forEach((el) => {
+      if (el?.isChecked === true) {
+        tempArr.push(el);
+      }
+    });
+
+    let updatedData = users.filter((el) => (el?.isChecked ? false : true));
+    dispatch(setUser(updatedData));
+    let Favourite = JSON.parse(localStorage.getItem("fav"));
+    if (Favourite) {
+      console.log(Favourite);
+      let newFav = [...Favourite, ...tempArr];
+      localStorage.setItem("fav", JSON.stringify(newFav));
+    } else {
+      localStorage.setItem("fav", JSON.stringify(tempArr));
+    }
+  };
 
   return (
     <div>
@@ -84,7 +96,12 @@ function ListUsers() {
             {users.length > 0 &&
               users.map((user) => {
                 return (
-                  <tr key={user._id}>
+                  <tr
+                    style={
+                      user.isChecked ? { backgroundColor: "#9CCC65" } : null
+                    }
+                    key={user._id}
+                  >
                     <td>
                       <input
                         type="checkbox"

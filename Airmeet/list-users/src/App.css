@@ -8,3 +8,12 @@ td,
 th {
   border: 1px solid black;
 }
+button {
+  margin: auto 10px;
+}
+.green {
+  background-color: chartreuse;
+}
+.normal {
+  background-color: #fff;
+}
