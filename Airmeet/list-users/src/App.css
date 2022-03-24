@@ -1,1 +1,10 @@
-
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+td,
+th {
+  border: 1px solid black;
+}

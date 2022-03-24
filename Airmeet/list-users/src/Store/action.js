@@ -2,6 +2,7 @@ import {
   GET_USER_ERROR,
   GET_USER_LOADING,
   GET_USER_SUCCESS,
+  SET_USER,
 } from "./actionTypes";
 
 export const getUserLoading = () => ({
@@ -18,7 +19,7 @@ export const getUserError = (err) => ({
   payload: err,
 });
 
-//   export const setUser = (data) => ({
-//     type: SET_USER,
-//     payload: data,
-//   });
+  export const setUser = (data) => ({
+    type: SET_USER,
+    payload: data,
+  });
